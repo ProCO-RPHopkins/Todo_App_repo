@@ -1,0 +1,37 @@
+Title: Todo App
+
+Files: todo.py; index.html; & styles.css
+
+Run: To run the Todo App, type "python todo.py" in the terminal. The following URL will appear in the terminal:
+        http://127.0.0.1:5000/ To open the app on the server, press Ctrl (PC) and click the link.
+
+Heading: My ToDo But Not Going to Get Done list
+
+Notes: AI was not used to create this file. All information is based on my perceived understanding of how the app functions.
+
+Basic Functions: 
+1. The app has a container field that prompts the user to "Enter new task".
+2. After the item is input, the user can either press the "Enter" button on their keyboard or click the "Add Task" button.
+3. The item is then sent to a database and posted to the server in its own container.
+4. The user can add as many tasks as they wish using the "Add Task" function.
+5. Inside the container there is a "Delete" button that removes the item from the server list and from the database when clicked on.
+
+Added Functions:
+* "Sort Todos"
+1. Once a list of tasks is made, the user can click on the "Sort Todos" button to alphabetize the tasks in ascending order.
+2. The html file uses the GET method to fetch the sort function from todo.py. 
+3. The content in the database is then sent to the server in sorted order.
+
+* "Delete All"
+1. The user can click on the "Delete All" button to clear all the tasks.
+    -A popup window that asks the user if they are sure they want to delete everything would be practical as another feature.
+2. When this button is clicked, the GET method calls the delete function from todo.py.
+3. The content in the database is then completely cleared.
+
+Added Styling:
+1. The background color was changed.
+2. A hover button was added that changes the color. 
+3. Space was added between buttons for aesthetic purposes.
+4. All buttons share the same styling from the custom-button class.
+
+
